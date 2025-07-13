@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Difference: Vite vs CRA</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f9;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .comparison {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .box {
+      width: 48%;
+      padding: 15px;
+      background-color: #f9f9f9;
+      border-left: 5px solid;
+      border-radius: 8px;
+    }
+
+    .vite {
+      border-color: #4caf50;
+    }
+
+    .cra {
+      border-color: #f44336;
+    }
+
+    .box h3 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .box code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Main Difference: Vite vs CRA</h2>
+  <div class="comparison">
+    <div class="box vite">
+      <h3>Vite</h3>
+      <p><code>index.html</code> is at the <strong>root</strong> of the project.</p>
+      <p>Uses <strong>main.jsx</strong> as entry point inside <code>src/</code>.</p>
+      <p>Faster builds with <strong>ESBuild</strong>.</p>
+    </div>
+    <div class="box cra">
+      <h3>Create React App</h3>
+      <p><code>index.html</code> is inside the <code>public/</code> folder.</p>
+      <p>Uses <strong>index.js</strong> as entry point inside <code>src/</code>.</p>
+      <p>Uses <strong>Webpack</strong> for builds (slower).</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
